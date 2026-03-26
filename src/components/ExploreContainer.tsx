@@ -1,23 +1,43 @@
 import './ExploreContainer.css';
-import { IonButton, IonHeader, IonContent, IonToolbar, IonTitle, IonPage, IonToast } from '@ionic/react';
+import { IonButton, IonAlert } from '@ionic/react';
+import { useState } from 'react';
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
-     return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Inline Toast</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent className="ion-padding">
-        <IonButton id="open-toast" expand="block">
-          Open
-        </IonButton>
-        <p>This toast example uses triggers to automatically open a toast when the button is clicked.</p>
-        <IonToast trigger="open-toast" message="This toast will disappear after 5 seconds" duration={5000}></IonToast>
-      </IonContent>
-    </IonPage>
+
+  const [showAlert, setShowAlert] = useState(false);
+
+  const alertButtons = [
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      handler: () => {
+        setShowAlert(false);
+      },
+    },
+    {
+      text: 'OK',
+      role: 'confirm',
+      handler: () => {
+        setShowAlert(false);
+      },
+    },
+  ];
+
+  return (
+    <div id="container">
+      <IonButton id="present-alert" onClick={() => setShowAlert(true)}>
+        Click Me
+      </IonButton>
+      <IonAlert
+        isOpen={showAlert}
+        onDidDismiss={() => setShowAlert(false)}
+        header="A Short Title Is Best"
+        subHeader="A Sub Header Is Optional"
+        message="A message should be a short, complete sentence."
+        buttons={alertButtons}
+      />
+    </div>
   );
 };
 
