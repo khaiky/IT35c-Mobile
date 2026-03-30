@@ -1,12 +1,12 @@
 import { IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-const Template: React.FC = () => {
+const Page2: React.FC = () => {
 
   return (
 
     <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonTitle>Template</IonTitle>
+    <IonTitle>Login</IonTitle>
   </IonToolbar>
 </IonHeader>
     </IonPage>
@@ -16,4 +16,4 @@ const Template: React.FC = () => {
 
 };
 
-export default Template;
+export default Page2;
