@@ -6,7 +6,7 @@ const Page1: React.FC = () => {
     <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonTitle>Page 1</IonTitle>
+    <IonTitle>Page1</IonTitle>
   </IonToolbar>
 </IonHeader>
     </IonPage>
