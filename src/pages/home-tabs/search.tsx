@@ -9,7 +9,7 @@ const search: React.FC =()=>{
                 <IonButtons>
                     <IonMenuButton></IonMenuButton>
                     <IonTitle>
-                        Favorites
+                        Search
                     </IonTitle>
                 </IonButtons>
             </IonToolbar>

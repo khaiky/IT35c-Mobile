@@ -9,7 +9,7 @@ const template: React.FC =()=>{
                 <IonButtons>
                     <IonMenuButton></IonMenuButton>
                     <IonTitle>
-                        Favorites
+                        Template
                     </IonTitle>
                 </IonButtons>
             </IonToolbar>

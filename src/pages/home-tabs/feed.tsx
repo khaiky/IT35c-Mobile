@@ -9,7 +9,7 @@ const feed: React.FC =()=>{
                 <IonButtons>
                     <IonMenuButton></IonMenuButton>
                     <IonTitle>
-                        Favorites
+                        Feed
                     </IonTitle>
                 </IonButtons>
             </IonToolbar>
