@@ -12,4 +12,3 @@ const Template: React.FC =()=>{
   );
 };
 export default Template;
-
