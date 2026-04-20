@@ -9,7 +9,7 @@ const search: React.FC =()=>{
                 <IonButtons>
                     <IonMenuButton></IonMenuButton>
                     <IonTitle>
-                        Search
+                        Template
                     </IonTitle>
                 </IonButtons>
             </IonToolbar>
@@ -22,5 +22,6 @@ const search: React.FC =()=>{
 
   );
 };
+
 
 export default search;
